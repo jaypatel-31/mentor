@@ -691,6 +691,42 @@ textarea.input-field {
   font-size: var(--fs-7);
   color: var(--manatee);
 }
+.testimonial-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 50%; /* Show 2 testimonials at a time */
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonial-controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonial-controls button:hover {
+  background-color: #555;
+}
 
 
   /**

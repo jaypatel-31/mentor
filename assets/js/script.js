@@ -48,6 +48,30 @@ window.addEventListener("scroll", function () {
 });
 
 
+  const track = document.querySelector('.testimonial-track');
+  const prevButton = document.querySelector('.prev-slide');
+  const nextButton = document.querySelector('.next-slide');
+  
+  let currentIndex = 0;
+  const slideWidth = document.querySelector('.testimonial-card').clientWidth;
+
+  // Slide to the next set of testimonials
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < 3) { // since we have 5 items, max index is 3 to ensure the last two show
+      currentIndex++;
+      track.style.transform = `translateX(-${currentIndex * slideWidth * 2}px)`; // move by two slides
+    }
+  });
+
+  // Slide to the previous set of testimonials
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      track.style.transform = `translateX(-${currentIndex * slideWidth * 2}px)`; // move by two slides
+    }
+  });
+
+
 
 /**
  * SCROLL REVEAL
