@@ -639,6 +639,95 @@ textarea.input-field {
 
   .project .btn { min-width: max-content; }
 
+/* Experience Section Styling */
+.exp-section {
+  padding: 80px 0; /* More padding for better spacing */
+  background-color: #f0f0f0;
+}
+
+.exp-container {
+  max-width: 1300px; /* Wider container for more spacious content */
+  margin: 0 auto;
+  padding: 0 50px; /* More padding on the sides */
+}
+
+/* Title Styling */
+.exp-title {
+  font-size: 3.6rem; /* Larger font size for the title */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px; /* More space below the title */
+  color: #222;
+}
+
+/* Grid Layout */
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px; /* Larger gap between cards */
+}
+
+/* Experience Card */
+.exp-card {
+  background-color: #fff;
+  padding: 50px; /* Increased padding inside the card */
+  border-radius: 20px; /* Larger border radius for a modern look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  transition: box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Enhanced hover shadow */
+}
+
+/* Card Title */
+.exp-card-title {
+  font-size: 2.2rem; /* Bigger card title */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px; /* More space between title and content */
+}
+
+/* List Styling */
+.exp-list {
+  list-style-type: disc;
+  margin-left: 5px; /* Adjusted left margin for better spacing */
+}
+
+.exp-item {
+  font-size: 1.4rem; /* Larger font size for list items */
+  color: #555;
+  line-height: 2; /* Increased line height for better readability */
+  margin-bottom: 15px; /* Larger space between list items */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .exp-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .exp-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
+  }
+
+  .exp-title {
+    font-size: 4rem; /* Larger title for large screens */
+  }
+
+  .exp-card-title {
+    font-size: 2.4rem; /* Larger card title for larger screens */
+  }
+
+  .exp-item {
+    font-size: 1.5rem; /* Larger text in list items for better readability */
+  }
+}
+
+
+
 /* Testimonial Section */
 .testimonial-section {
   background-color: var(--cultured);
