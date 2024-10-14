@@ -1076,3 +1076,35 @@ textarea.input-field {
   .about .grid-list { gap: 60px; }
 
 }
+
+.desktop-warning {
+  background-color: #f8d7da;
+  color: #721c24;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.desktop-warning strong {
+  font-weight: bold;
+}
+
+/* Only show the banner on mobile and tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #desktop-warning {
+    display: block;
+  }
+}
+
+/* Hide the banner on desktop */
+@media (min-width: 1025px) {
+  #desktop-warning {
+    display: none;
+  }
+}
